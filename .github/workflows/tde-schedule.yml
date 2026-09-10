@@ -27,7 +27,7 @@ jobs:
           DING_WEBHOOK: ${{ secrets.DING_WEBHOOK }}
         run: python tde_bot.py
 
-      - name: Commit updated seen_TDE_papers.json
+      - name: Commit updated seen_papers.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
