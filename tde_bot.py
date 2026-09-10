@@ -5,7 +5,7 @@ import os
 
 # ========== 从环境变量读取配置（云端GitHub Actions使用） ==========
 DING_WEBHOOK = os.getenv("DING_WEBHOOK")
-STATE_FILE = "seen_TDE_papers.json"
+STATE_FILE = "seen_papers.json"
 QUERY = '(("tidal disruption event" OR TDE OR "stellar disruption") AND (cat:astro-ph.HE OR cat:gr-qc))'
 
 def load_seen():
