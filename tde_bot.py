@@ -38,7 +38,11 @@ def fetch_tde_papers():
         sort_by=arxiv.SortCriterion.SubmittedDate,
         sort_order=arxiv.SortOrder.Descending
     )
-    client = arxiv.Client()
+    client = arxiv.Client(
+        page_size = 20,
+        delay_seconds = 5, 
+        num_retries = 5
+    )
     new_papers = []
     for paper in client.results(search):
         arxiv_id = paper.entry_id.split("/")[-1]
