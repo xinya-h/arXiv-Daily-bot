@@ -1,2 +1,2 @@
 # arXiv-Daily-bot
-for daily arxiv paper
+automatically for daily arxiv paper
